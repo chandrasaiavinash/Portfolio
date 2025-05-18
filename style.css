@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+  color: white;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(86, 2, 2);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: skyblue;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  background: linear-gradient(to right, black, rgb(55, 220, 201), rgba(80, 168, 226, 0.578));
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero .name {
+  color: rgb(206, 73, 16);
+}
+
+#hero h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% 
+  {
+    opacity: 1; 
+}
+  50%
+  {
+     opacity: 0; 
+    }
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: rgb(22, 96, 126);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid skyblue;
+  display: inline-block;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+.card {
+  background: black;
+  padding: 1rem;
+  border-left: 5px solid skyblue;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  background:  rgb(129, 126, 126);
+  padding: 1rem;
+  margin-top: 2rem;
+}
